@@ -19,15 +19,20 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif; /* Adding Roboto as the default font */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Define a utility class for the Inter font */
+  .inter-font {
+    font-family: 'Inter', sans-serif;
   }
 }
